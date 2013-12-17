@@ -17,10 +17,10 @@
 				<ul class="nav navbar-nav pull-right">
 					<% if user_signed_in? %>
 					<li><%= link_to current_user.full_name, edit_user_registration_path %></li>
-					<li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+					<li><%= link_to "Log Out", logout_path %></li>
 					<% else %>
-					<li><%= link_to "Register", new_user_registration_path %></li>
-					<li><%= link_to "Log in", new_user_session_path %></li>
+					<li><%= link_to "Register", register_path %></li>
+					<li><%= link_to "Log in", login_path %></li>
 					<% end %>
 				</ul>
 			</div>
@@ -28,7 +28,7 @@
 	</div>
 	<div class="container">
 		<% flash.each do  |type, message| %>
-			<div class="alert">
+			<div class="alert <%= flash_class type %>">
 				<button class="close" data-dismiss="alert">x</button>
 				<%= message %>
 			</div>
