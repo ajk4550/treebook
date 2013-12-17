@@ -8,6 +8,5 @@ module ApplicationHelper
 			"alert-success"
 		else
 			"alert-default"
-		end
 	end
 end
