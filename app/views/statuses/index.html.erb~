@@ -5,6 +5,7 @@
 <% if user_signed_in? %>
 <%= link_to "Post a New Status", new_status_path, class:"btn btn-success" %>
 <% end %>
+
 <% @statuses.each do |status| %>
 	<div class="status">
 		<strong><%= status.user.full_name %></strong>
