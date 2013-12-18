@@ -1,4 +1,6 @@
 Treebook::Application.routes.draw do
+  get "profiles/show"
+  get "profils/show"
   devise_for :users, :controllers => {:registrations => "users/registrations"}
   
   devise_scope :user do
@@ -8,7 +10,7 @@ Treebook::Application.routes.draw do
   end
   
   resources :statuses
-  get 'feed', to: 'status#index', as: :feed
+  get 'feed', to: 'statuses#index', as: :feed
 	root to: 'statuses#index'
 
 
