@@ -16,12 +16,6 @@ class StatusesControllerTest < ActionController::TestCase
     assert_response :redirect
     assert_redirected_to new_user_session_path
   end
-  
-  test "should render the new page when logged in" do
-  	sign_in users(:aaron)
-  	get :new
-  	assert_response :success
-  end
 
   test "should create status" do
     assert_difference('Status.count') do

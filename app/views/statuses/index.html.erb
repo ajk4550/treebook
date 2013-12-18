@@ -2,7 +2,9 @@
 	<h1>All of the Statuses</h1>
 </div>	
 
+<% if user_signed_in? %>
 <%= link_to "Post a New Status", new_status_path, class:"btn btn-success" %>
+<% end %>
 
 <% @statuses.each do |status| %>
 	<div class="status">
