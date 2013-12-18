@@ -8,10 +8,10 @@
 	<div class="status">
 		<div class="row">
 			<div class="col-md-1">
-				avatar
+				<%= image_tag status.user.gravatar_url %>
 			</div>
 			<div class="col-md-7">
-				<strong><%= status.user.full_name %></strong>
+				<strong><%= link_to status.user.full_name, '/'+users.profile_name %></strong>
 				<p><%= status.content %></p>
 				<div class="meta">
 					<%= link_to time_ago_in_words(status.created_at) + " ago", status %> 
