@@ -1,4 +1,17 @@
-<div class="row">
+<style>
+	body {
+			background-image: url(<%= asset_path 'splash.png' %>) !important;
+		}
+	h2 {
+		color: #ffffff;
+		text-align:center;
+	}
+	.splash {
+		margin-top: 40px;
+	}
+</style>
+
+<div class="row splash">
 	<div class="col-md-4">
 	<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
 		
@@ -13,9 +26,9 @@
 
 		<div><%= f.button :submit, "Sign in" %></div>
 		</fieldset>
+		
+		<%= render "devise/shared/links" %>
 	<% end %>
-
-	<%= render "devise/shared/links" %>
 	</div>
 
 	<div class="col-md-8">

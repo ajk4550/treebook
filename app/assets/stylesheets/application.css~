@@ -14,4 +14,11 @@
 
 body {
 	padding-top:50px;
+	background-image: url('splash.png');
+}
+.alert {
+	margin-top:10px;
+}
+.splash {
+	
 }
