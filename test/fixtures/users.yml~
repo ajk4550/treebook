@@ -4,8 +4,8 @@ aaron:
   email: "aaron.kaye92@gmail.com"
   profile_name: "ajk4550"	
   
- matt:
-   first_name: "Matthew"
-   last_name: "Wurl"
-   email: "matt@gmail.com"
-   profile_name: "matt"
+matt:
+  first_name: "Matthew"
+  last_name: "Wurl"
+  email: "matt@gmail.com"
+  profile_name: "matt"

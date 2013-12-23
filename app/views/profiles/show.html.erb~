@@ -1,0 +1,19 @@
+<div class="page-header">
+	<h1><%= @user.full_name %>
+</div>
+
+<% if @statuses %>
+	<% @statuses.each do |status| %>
+		<div class="well">
+			<div class="row">
+				<div class="col-md-1">
+					<%= image_tag status.user.gravatar_url %>
+				</div>
+				<div class="col-md-7">
+					<%= status.content %>
+					<hr />
+					<%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago
+				</div>
+		</div>
+	<% end %>
+<% end %>

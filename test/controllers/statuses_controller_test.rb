@@ -53,10 +53,10 @@ class StatusesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @status
-    assert_response :success
-  end
+#  test "should get edit" do
+#    get :edit, id: @status
+#    assert_response :success
+#  end
   
   test "Should get edit when logged in" do
   	sign_in users(:aaron)
@@ -90,10 +90,10 @@ class StatusesControllerTest < ActionController::TestCase
   	assert_equal assigns(:status).user_id, users(:aaron).id
   end
   
-  test "should update status" do
-    patch :update, id: @status, status: { content: @status.content }
-    assert_redirected_to status_path(assigns(:status))
-  end
+#  test "should update status" do
+#    patch :update, id: @status, status: { content: @status.content }
+#    assert_redirected_to status_path(assigns(:status))
+#  end
 
   test "should destroy status" do
     assert_difference('Status.count', -1) do
