@@ -2,8 +2,9 @@ aaron:
   first_name: "Aaron"
   last_name: "Kaye" 
   email: "aaron.kaye92@gmail.com"
-  profile_name: "ajk4550"	
-  
+  profile_name: "ajk4550"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
+
 matt:
   first_name: "Matthew"
   last_name: "Wurl"
